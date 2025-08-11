@@ -1,0 +1,9 @@
+projects:
+  PrivateChest:
+    path: ""
+    type: plugin
+    name: PrivateChest
+    license: mit
+    version: 1.0.0
+    api:
+      - 5.0.0
