@@ -21,7 +21,7 @@ class PrivateChest extends PluginBase {
         if (!$sender instanceof Player) return false;
     
         if (count($args) < 1) {
-            $sender->sendMessage("§e使用方法: /pc <lock|unlock|share|help>");
+            $sender->sendMessage("§e使用方法: /pcc <lock|unlock|share|help>");
             return true;
         }
     
@@ -54,7 +54,7 @@ class PrivateChest extends PluginBase {
     
             case "share":
                 if (count($args) < 1) {
-                    $sender->sendMessage("§c使用方法: /pc share <プレイヤー名>");
+                    $sender->sendMessage("§c使用方法: /pcc share <プレイヤー名>");
                     break;
                 }
                 $target = $args[0];
@@ -71,13 +71,13 @@ class PrivateChest extends PluginBase {
     
             case "help":
                 $sender->sendMessage("§6PrivateChest コマンド一覧:");
-                $sender->sendMessage("§e/pc lock §7- チェストをロック");
-                $sender->sendMessage("§e/pc unlock §7- ロック解除");
-                $sender->sendMessage("§e/pc share <player> §7- プレイヤーと共有");
+                $sender->sendMessage("§e/pcc lock §7- チェストをロック");
+                $sender->sendMessage("§e/pcc unlock §7- ロック解除");
+                $sender->sendMessage("§e/pcc share <player> §7- プレイヤーと共有");
                 break;
     
             default:
-                $sender->sendMessage("§c不明なサブコマンドです。 /pc help を使ってください。");
+                $sender->sendMessage("§c不明なサブコマンドです。 /pcc help を使ってください。");
                 break;
         }
     
