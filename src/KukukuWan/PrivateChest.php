@@ -1,6 +1,6 @@
 <?php
 
-namespace YourName;
+namespace KukukuWan;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
