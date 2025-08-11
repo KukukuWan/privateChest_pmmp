@@ -2,7 +2,7 @@ name: PrivateChest_pmmp
 version: 1.0.0
 main: KukukuWan\PrivateChest
 api: 5.0.0
-author: YourName
+author: KukukuWan
 description: PMMP用のチェストのロック・共有を管理するプラグイン
 commands:
   pcc:
