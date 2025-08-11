@@ -2,7 +2,7 @@ projects:
   PrivateChest:
     path: ""
     type: plugin
-    name: PrivateChest
+    name: PrivateChest_pmmp
     license: mit
     version: 1.0.0
     api:
