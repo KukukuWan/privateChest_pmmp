@@ -1,6 +1,6 @@
 name: PrivateChest_pmmp
 version: 1.0.0
-main: KukukuWan\PrivateChest_pmmp
+main: KukukuWan\PrivateChest
 api: 5.0.0
 author: YourName
 description: PMMP用のチェストのロック・共有を管理するプラグイン
