@@ -8,3 +8,8 @@ commands:
   pcc:
     description: PrivateChestのコマンド群
     usage: /pcc <lock|unlock|share|help>
+    permission: privatechest.command
+permissions:
+  privatechest.command:
+    description: PrivateChestコマンドを使用するための権限
+    default: true
