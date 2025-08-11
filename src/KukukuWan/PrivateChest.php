@@ -83,4 +83,24 @@ class PrivateChest extends PluginBase {
     
         return true;
     }
+
+    use pocketmine\math\Vector3;
+    use pocketmine\world\Position;
+    
+    private function getChestGroup(Position $pos): array {
+        // 単一チェストとして扱い、一意の座標キーを返す
+        $key = $pos->getFloorX() . ":" . $pos->getFloorY() . ":" . $pos->getFloorZ() . ":" . $pos->getWorld()->getFolderName();
+        return [$key];
+    }
+    
+    private function placeSign(string $posKey, string $owner, array $shared): void {
+        // デバッグ用メッセージ（実際の看板設置は未実装）
+        $this->getLogger()->info("Sign placed at $posKey - Owner: $owner Shared: [" . implode(",", $shared) . "]");
+    }
+    
+    private function removeSign(string $posKey): void {
+        // デバッグ用メッセージ（実際の看板削除は未実装）
+        $this->getLogger()->info("Sign removed at $posKey");
+    }
+
 }
